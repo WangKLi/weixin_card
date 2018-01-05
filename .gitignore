@@ -1,6 +1,7 @@
 .idea/
 img/*.jpg
-out/*.jpg
+head_img/*.jpg
+itchat.pkl
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
