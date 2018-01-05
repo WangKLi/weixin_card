@@ -1,4 +1,6 @@
 .idea/
+img/*.jpg
+out/*.jpg
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
