@@ -1,6 +1,8 @@
-import itchat
-from img_mager import create_img
 import time
+
+import itchat
+
+from img_mager_1 import create_img
 
 
 @itchat.msg_register(itchat.content.TEXT)
@@ -16,9 +18,7 @@ def print_content(msg):
                 continue
             if i == 0:
                 from_user = friend.UserName
-                to_user = friend.UserName
-            else:
-                to_user = friend.UserName
+            to_user = friend.UserName
             itchat.get_head_img(userName=friend.UserName, picDir="./img/" + friend.UserName + ".jpg")
             create_img(from_user, to_user)
             itchat.send_image(f"./head_img/{to_user}.jpg", toUserName=to_user)
@@ -28,7 +28,7 @@ def print_content(msg):
             print(e)
 
 
-itchat.auto_login(hotReload=True)
+itchat.auto_login()
 itchat.run()
 
 
